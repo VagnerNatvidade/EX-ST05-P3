@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --hue: 194;
+  --bg-color: hsla(var(--hue), 5%, 7%, 1);
+  --tt-color: hsla(var(--hue), 40%, 98%, 1);
+  --primary-color: hsla(var(--hue), 100%, 63%, 1);
+  --controls-bg-color: hsla(var(--hue), 0%, 14%, 1);
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  color: var(--tt-color);
+  background: var(--bg-color);
+}
+
+#app {
+  display: grid;
+  justify-items: center;
+}
+
+.flex {
+  display: flex;
+}
