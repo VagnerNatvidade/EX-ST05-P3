@@ -10,7 +10,28 @@
   --tt-color: hsla(var(--hue), 40%, 98%, 1);
   --primary-color: hsla(var(--hue), 100%, 63%, 1);
   --controls-bg-color: hsla(var(--hue), 0%, 14%, 1);
+  --btn-secundary: hsla(var(--hue), 40%, 98%, 1);
   font-size: clamp(40%, 1% + 2vw, 62, 5%);
+}
+
+html.light {
+  --bg-color: hsla(var(--hue), 40%, 98%, 1);
+  --tt-color: hsla(var(--hue), 5%, 7%, 1);
+  --controls-bg-color: hsla(var(--hue), 0%, 14%, 1);
+}
+
+html:not(.light) .ph-moon,
+html.light .ph-sun {
+  display: none;
+}
+
+#toggle-mode {
+  position: absolute;
+  right: 3.2rem;
+  top: 3.2rem;
+  font-size: 3.2rem;
+  line-height: 0;
+  color: var(--tt-color);
 }
 
 body {
@@ -53,7 +74,7 @@ button {
 }
 
 .secundary {
-  color: var(--tt-color);
+  color: var(--btn-secundary);
 }
 
 /*controls*/
