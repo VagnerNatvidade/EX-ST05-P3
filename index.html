@@ -11,7 +11,7 @@
   <body>
     <main id="app">
       <button id="toggle-mode">
-        <span>Ativa/Desativar light mode</span>
+        <span class="sr-only">Ativa/Desativar light mode</span>
         <i class="ph-bold ph-sun"></i>
         <i class="ph-bold ph-moon"></i>
       </button>
@@ -21,12 +21,24 @@
         <span id="seconds">00</span>
       </section>
       <section id="controls" class="flex">
-        <button class="ph ph-play-circle"></button>
-        <button class="ph ph-pause-circle"></button>
-        <button class="ph ph-timer secundary"></button>
-        <button class="ph ph-stop-circle secundary"></button>
-        <button class="ph ph-speaker-none secundary"></button>
-        <button class="ph ph-speaker-high"></button>
+        <button class="ph ph-play-circle">
+          <span class="sr-only">iniciar contador</span>
+        </button>
+        <button class="ph ph-pause-circle">
+          <span class="sr-only">pausar contador</span>
+        </button>
+        <button class="ph ph-timer secundary">
+          <span class="sr-only">ajustar contador</span>
+        </button>
+        <button class="ph ph-stop-circle secundary">
+          <span class="sr-only">reiniciar contador</span>
+        </button>
+        <button class="ph ph-speaker-none secundary">
+          <span class="sr-only">iniciar musica</span>
+        </button>
+        <button class="ph ph-speaker-high">
+          <span class="sr-only">parar musica</span>
+        </button>
       </section>
     </main>
   </body>
