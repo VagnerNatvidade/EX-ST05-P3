@@ -10,6 +10,7 @@
   --tt-color: hsla(var(--hue), 40%, 98%, 1);
   --primary-color: hsla(var(--hue), 100%, 63%, 1);
   --controls-bg-color: hsla(var(--hue), 0%, 14%, 1);
+  font-size: clamp(40%, 1% + 2vw, 62, 5%);
 }
 
 body {
@@ -27,4 +28,30 @@ body {
 
 .flex {
   display: flex;
+}
+
+#timer {
+  font-size: 9.6rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#controls {
+  gap: 1.6rem;
+  margin-top: 1.6rem;
+  padding: 2.2rem 4rem;
+  border-radius: 999rem;
+  background: var(--controls-bg-color);
+}
+
+button {
+  border: none;
+  font-size: 6.4rem;
+  color: var(--primary-color);
+  background: transparent;
+  cursor: pointer;
+}
+
+.secundary {
+  color: var(--tt-color);
 }
