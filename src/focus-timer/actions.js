@@ -10,6 +10,7 @@ export function toggleRunning() {
 export function reset() {
   state.isRunnig = false;
   document.documentElement.classList.remove("running");
+  timer.updateDisplay();
 }
 
 export function set() {
