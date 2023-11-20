@@ -1,5 +1,12 @@
+import state from "./state.js";
+
 export function toggleRunning() {
-  console.log("toggleRunning");
+  state.isRunnig = document.documentElement.classList.toggle("running");
+}
+
+export function reset() {
+  state.isRunnig = false;
+  document.documentElement.classList.remove("running");
 }
 
 export function set() {
@@ -7,5 +14,5 @@ export function set() {
 }
 
 export function toggleMusic() {
-  console.log("toggleMusic");
+  state.isMute = document.documentElement.classList.toggle("music-on");
 }
